@@ -23,7 +23,7 @@ app.config['SECRET_KEY'] = 'bdb21f595598ab4780155f48ea1c1add8ef3efdd'
 
 @app.route('/',methods=['GET','POST'])
 def index_page():
-    return render_template('generate_qrcode.html', title="index Page")
+    return render_template('generate_qrcode.html', title="QRGen")
 
 @app.route('/generate',methods=['POST'])
 def generate_url():
